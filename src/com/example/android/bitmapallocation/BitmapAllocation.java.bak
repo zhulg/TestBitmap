@@ -69,8 +69,6 @@ public class BitmapAllocation extends Activity {
         BitmapFactory.decodeResource(getResources(), R.drawable.a, mBitmapOptions);
         imageview.setImageBitmap(mCurrentBitmap);
 
-
-
         // When the user clicks on the image, load the next one in the list
         imageview.setOnClickListener(new View.OnClickListener() {
 
@@ -93,7 +91,6 @@ public class BitmapAllocation extends Activity {
                 // collector if you look at logcat with and without reuse. Avoiding garbage
                 // collection when possible, especially for large items like bitmaps,
                 // is always a good idea.
-                
                 durationTextview.setText("Load took " +
                         (System.currentTimeMillis() - startTime));
             }
